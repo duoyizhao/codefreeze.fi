@@ -48,22 +48,29 @@ a {
 }
 
 
+
 .flex {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex: 1;
 
   &.flex-vertical{
     flex-direction: column;
     align-items: center;
   }
 
-  .flex-item{
-    flex: 3;
-  }
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex .tile{
+  flex: 3;
+}
+ul.flex li{
+  flex: 1;
+}
+
+.participants-list.flex li{
 }

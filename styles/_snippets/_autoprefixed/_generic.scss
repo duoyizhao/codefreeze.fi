@@ -55,11 +55,8 @@ a {
 }
 
 
+
 .flex {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,9 +66,6 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 
   &.flex-vertical{
     -webkit-box-orient: vertical;
@@ -83,11 +77,25 @@ a {
             align-items: center;
   }
 
-  .flex-item{
-    -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
-  }
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex .tile{
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+ul.flex li{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.participants-list.flex li{
 }
 // #############################
 // THIS FILE IS GENERATED, PLEASE DO NOT MODIFY

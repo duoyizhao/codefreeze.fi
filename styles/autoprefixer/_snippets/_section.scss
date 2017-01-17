@@ -86,20 +86,15 @@
 .participants-list
 {
 
-    display: flex;
-    flex-wrap: wrap;
-
     list-style: none;
     margin: 0;
     padding: 0;
     
     li
     {
-        display: block;
-        float: left;
-        text-align: center;
         margin: 0 15px 15px 0;
 		    height: 270px;
+        min-width: 200px;
         
         img
         {
@@ -112,7 +107,7 @@
         .name
         {
             display: block;
-			width: 200px;
+			      width: 200px;
             font-size: 18px;
             font-weight: 600;
             margin: 5px 0 0 0;
